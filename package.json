@@ -7,15 +7,18 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "etl": "node support/placesETL.js"
+    "etl:place": "node support/places.js",
+    "etl:image": "node support/image.js"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.3.41",
     "async": "^3.2.5",
+    "cloudinary": "^1.41.0",
     "dotenv": "^16.3.1",
     "next": "14.0.2",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "streamifier": "^0.1.1"
   },
   "devDependencies": {
     "@types/node": "^20",

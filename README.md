@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Playami
 
-## Getting Started
+[Restaurantes en Playas de Tijuana?](http://www.playami.com/)
 
-First, run the development server:
+## Garita Center
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+[Reporte de Garitas Tijuana](https://www.garitacenter.com/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Feedmetj
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+[Restaurantes en Tijuana?](https://www.feedmetj.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### El Valle de Guadalupe
 
-## Learn More
+[La Ruta del Vino Ensenada](https://www.larutadelvinoensenada.com/)
 
-To learn more about Next.js, take a look at the following resources:
+### Mint IT Media
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Desarrollo Web en Tijuana](https://www.mintitmedia.com/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Volkswagen Chicago
 
-## Deploy on Vercel
+[Volkswagen Chicago](https://volkswagen-chicago.mintitmedia.com/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Coupons and Promo Codes for Papa Johns
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+[Coupons and Promo Codes for Papa Johns](https://coupons.garitacenter.com/)
+
+### Chicago Food
+
+[Chicago Food](https://chicago-food.mintitmedia.com/)
+
+### Chicago Live Music Events
+
+[Chicago Live Music Events](https://livemusic.mintitmedia.com/)
