@@ -1,8 +1,58 @@
 # Playami
 
-[Restaurantes en Playas de Tijuana?](http://www.playami.com/)
+[Restaurantes en Playas de Tijuana](http://www.playami.com/)
 
-## Garita Center
+## Installation
+
+- Install [nvm](https://formulae.brew.sh/formula/nvm)
+
+```bash
+brew install nvm
+```
+
+- Activate node version
+
+```bash
+nvm use
+```
+
+- Install packages
+
+```bash
+npm i
+```
+
+## Run
+
+```bash
+npm run dev
+```
+
+## ETLs
+
+**Note**: Add expected environment variables `.env`.
+
+**Note**: [MINT API](https://github.com/garciadiazjaime/django-models) needs to be running.
+
+- Places
+
+Gets places from google maps based on `lat,lng` and `radius`.
+
+```bash
+npm run places
+```
+
+- Image
+
+Get image from google api for a specific place.
+
+```bash
+npm run image
+```
+
+## Powered by
+
+### Garita Center
 
 [Reporte de Garitas Tijuana](https://www.garitacenter.com/)
 

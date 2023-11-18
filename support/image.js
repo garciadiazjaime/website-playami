@@ -11,7 +11,7 @@ const MINT_API_URL = process.env.NEXT_PUBLIC_MINT_API;
 
 async function extract() {
   const response = await fetch(
-    `${MINT_API_URL}/places/?image_empty=true&gmaps_tries_lower=3&limit=5`
+    `${MINT_API_URL}/places/?image_empty=true&gmaps_tries_lower=3`
   );
   const data = await response.json();
 
