@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import places from "../public/places.json";
 
 export default function Home() {
@@ -30,7 +32,14 @@ export default function Home() {
         </h2>
         <section>
           {places.map((place, index) => (
-            <div key={index}>
+            <div key={place.place_id}>
+              <Image
+                priority={index === 0}
+                src={place.image}
+                width={400}
+                height={400}
+                alt={place.name}
+              />
               <h2>{place.name}</h2>
               <p>{place.vicinity}</p>
             </div>

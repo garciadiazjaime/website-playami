@@ -50,6 +50,14 @@ Get image from google api for a specific place.
 npm run image
 ```
 
+- Reset
+
+Hits API and resets public json for places.
+
+```bash
+npm run reset
+```
+
 ## Powered by
 
 ### Garita Center

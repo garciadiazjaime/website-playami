@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "place": "node support/places.js",
-    "image": "node support/image.js"
+    "image": "node support/image.js",
+    "reset": "node support/reset.js"
   },
   "dependencies": {
     "@googlemaps/google-maps-services-js": "^3.3.41",
