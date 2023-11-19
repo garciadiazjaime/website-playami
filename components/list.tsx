@@ -34,9 +34,10 @@ export default function List(props: { slug: string }) {
       fontSize: 20,
       padding: 12,
       flex: 1,
-      textAlign: "center",
-      textDecoration: "none",
       color: "black",
+      textDecoration: "none",
+      display: "flex",
+      justifyContent: "center",
     },
     menuActive: {
       borderBottom: "1px solid black",
