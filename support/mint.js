@@ -2,8 +2,12 @@ require("dotenv").config();
 
 const MINT_API = process.env.NEXT_PUBLIC_MINT_API;
 
-async function getPlacesWithImage() {
-  return fetch(`${MINT_API}/places/?image_empty=false`);
+async function getPlaces(query) {
+  return fetch(`${MINT_API}/places/?${query}`);
+}
+
+async function getRestaurantsWithImage() {
+  return fetch(`${MINT_API}/places/?image_empty=false&search=restaurant`);
 }
 
 async function uploadPlaceImage(pk, image) {
@@ -18,5 +22,5 @@ async function uploadPlaceImage(pk, image) {
 
 module.exports = {
   uploadPlaceImage,
-  getPlacesWithImage,
+  getPlaces,
 };
