@@ -26,7 +26,7 @@ export default function List(props: { slug: string }) {
   const styles = {
     container: { maxWidth: 800, margin: "0 auto", padding: "0 12px" },
     color: {
-      primary: "#ff0000",
+      primary: "#f67570",
       secondary: "#2d5d2a",
       gray: "#d1d1d1",
     },
