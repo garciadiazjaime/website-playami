@@ -5,17 +5,18 @@ import restaurants from "../public/restaurant.json";
 import cafe from "../public/cafe.json";
 import bar from "../public/bar.json";
 
+import cssRules from "./list.module.css";
+
 function getData(slug: string) {
   if (slug === "cafe") {
-    return { title: "Cafecito", places: cafe };
+    return { places: cafe };
   }
 
   if (slug === "bar") {
-    return { title: "Drinks", places: bar };
+    return { places: bar };
   }
 
   return {
-    title: "Comida",
     places: restaurants,
   };
 }
@@ -23,41 +24,41 @@ function getData(slug: string) {
 export default function List(props: { slug: string }) {
   const { slug } = props;
 
+  const color = {
+    primary: "#f67570",
+    secondary: "#2d5d2a",
+    gray: "#d1d1d1",
+  };
   const styles = {
     container: { maxWidth: 800, margin: "0 auto", padding: "0 12px" },
-    color: {
-      primary: "#f67570",
-      secondary: "#2d5d2a",
-      gray: "#d1d1d1",
-    },
+
     menu: {
       fontSize: 20,
       padding: 12,
       flex: 1,
       color: "black",
       textDecoration: "none",
-      display: "flex",
-      justifyContent: "center",
     },
     menuActive: {
-      borderBottom: "1px solid black",
+      color: color.primary,
     },
   };
 
-  const { places, title } = getData(slug);
+  const { places } = getData(slug);
 
   return (
     <>
       <nav
+        className={cssRules.menu}
         style={{
           display: "flex",
           justifyContent: "space-between",
-          padding: "20px 0",
+          padding: "12px",
           position: "fixed",
           top: 0,
           left: 0,
-          width: "100%",
           background: "white",
+          flexDirection: "column",
         }}
       >
         <Link
@@ -89,16 +90,11 @@ export default function List(props: { slug: string }) {
         </Link>
       </nav>
 
-      <h1 style={{ ...styles.container, marginTop: 100, fontSize: 28 }}>
-        <span style={{ color: styles.color.primary }}>{title}</span> en Playas
-        Tijuana
-      </h1>
-
-      <main>
+      <main style={{ maxWidth: 700, margin: "0 auto" }}>
         {places.map((place, index) => (
           <article
             key={place.place_id}
-            style={{ borderBottom: "2px solid #CCC", margin: "24px 0" }}
+            style={{ borderBottom: "2px solid #CCC", marginBottom: 24 }}
           >
             <Image
               priority={index === 0}
@@ -121,7 +117,7 @@ export default function List(props: { slug: string }) {
       </main>
 
       <footer>
-        <h3 style={{ color: styles.color.secondary }}>
+        <h3 style={{ color: color.secondary }}>
           La mejor comida de Tijuana se cocina en Playas de Tijuana.
         </h3>
       </footer>

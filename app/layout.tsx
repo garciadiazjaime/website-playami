@@ -33,7 +33,9 @@ export default function RootLayout({
         <meta name="description" content={description} />
         <link href="https://www.google-analytics.com" rel="dns-prefetch" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} style={{ margin: 0 }}>
+        {children}
+      </body>
     </html>
   );
 }
